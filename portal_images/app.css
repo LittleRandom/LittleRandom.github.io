@@ -20,8 +20,8 @@ p{
 
 /* Blocks on the website */
 .image {
-  max-height:80%;
-  max-width:80%;
+  max-height:100%;
+  max-width:100%;
   margin:10px;
 }
 
@@ -35,22 +35,43 @@ p{
 
 .caption {
   display:block;
+  margin: 10px;
+  bottom:0;
 }
 
 /* Add some content at the bottom of the video/page */
 .content {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-top: 37.5%;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 70%;
+  width: 80%;
+
   /* left: 13%; */
-  padding: 0;
-  
+  padding:auto;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+
 }
+
+
+.content div{
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.list{
+  list-style: none;
+}
+
+
+
+
 
 /* Youtube Embed Fullscreen Background */
 * { box-sizing: border-box; }
@@ -91,4 +112,3 @@ p{
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
-
